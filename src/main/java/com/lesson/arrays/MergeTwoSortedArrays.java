@@ -5,16 +5,17 @@ import java.util.Arrays;
 public class MergeTwoSortedArrays {
 
     public static void main(String[] args) {
+        MergeTwoSortedArrays MergeTwoSortedArrays = new MergeTwoSortedArrays();
 
         int[] arr1 = {1, 3, 4, 15};
         int[] arr2 = {0, 2, 6, 7, 8, 12};
 
-        Arrays.stream(mergeArrays(arr1, arr2))
+        Arrays.stream(MergeTwoSortedArrays.mergeArrays(arr1, arr2))
             .forEach(System.out::println);
 
     }
 
-    private static int[] mergeArrays(int[] arr1, int[] arr2) {
+    public int[] mergeArrays(int[] arr1, int[] arr2) {
         int [] result = new int[arr1.length + arr2.length];
 
         int i =0;
